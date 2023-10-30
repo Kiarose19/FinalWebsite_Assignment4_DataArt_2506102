@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Data Visualisations" />
+    <meta name="description" content="Space" />
+    <meta name="description" content="Nasa APIs" />
+    <meta name="robots" content=".....,....." />
+    <meta name="googlebot" content="......,......" />
+    <meta name="keywords" content="Data Visualisations, Nasa, APIs, Space" />
+    <title>NASA API Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d7dd1faf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="sticky">
+        <script src="app.js"></script>
+        <label for="logo" class="logo">Space Things</label>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="designs.html">Designs</a></li>
+          <li><a href="data-vis.html">Data Visualisations</a></li>
+          <li><a href="data-art.html">Data Art</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Space Things</h1>
+      <p id="intro">
+        Welcome to the website that is crazy about space and Nasa. As you embark
+        on this journey you will come across interesting space facts, learn more
+        about Nasa, and encounter a few space jokes too! You will also get the
+        exciting opportunity to view the data of a Nasa API in a simplified way
+        through data visualisation. Enjoy your journey through space!!
+      </p>
+      <section class="container">
+        <article class="article">
+          <p>FUN SPACE FACTS</p>
+          <p id="fact">
+            If you want to learn about some interesting little facts about space
+            please click the button below. These facts well fun are also very
+            educational and can improve your knowledge of space well satisfying
+            that hunger for learning!!
+          </p>
+          <p id="source">Source</p>
+          <button id="factbtn" onclick="getFact()">Generate Fact</button>
+        </article>
+      </section>
+
+      <h2 id="blogss">My Blogs</h2>
+      <p id="para">
+        Below you can find the blog section which is just a little preview of
+        what content will be present on the blog page. The blog page includes a
+        post on data Visualisations and what they are and a second blog post on
+        the UI/UX of my website.
+      </p>
+
+      <section class="row">
+        <article class="article2">
+          <p>Blog Posts</p>
+          <p class="blg" id="blog">
+            My blog posts can provide you with a insight not only into my
+            thinking process but also convey to you the reasoning for many of my
+            choices whether related to the data visualisations or the design
+            choices and layout of this very website. If you would like to learn
+            more please click the "Blog One/Two" buttons to be transported to
+            the blog page.
+          </p>
+          <p id="title">Title</p>
+          <button id="nextblogbtn" onclick="getBlog()">Next Blog</button>
+          <button onclick="GoToBlogsPage()" id="blogsbtn">Blogs</button>
+        </article>
+      </section>
+
+      <section class="wireframe">
+        <article class="wireframecol1">
+          <p>
+            The design page includes the wireframes to the first iteration of
+            the website as well as the revised wireframes. The style guide is
+            included on this page too and conveys the reasoning behind my design
+            choices.
+          </p>
+          <img src="Images/sigmund-_dJCBtdUu74-unsplash.jpg" alt="" />
+        </article>
+
+        <article class="wireframecol2">
+          <h3 id="process">The designs</h3>
+          <p>
+            The inclusion of both first iterations of wireframes and revised
+            wireframes clearly conveys any changes and improvement throughout
+            the process of building the website. While the style guide shows why
+            I chose to use certain layouts, colours and fonts. If you would like
+            to learn more about the creation of this website you can click the
+            button below.
+          </p>
+          <button onclick="GoToDesignPage()" id="designbtn">Designs</button>
+        </article>
+      </section>
+
+      <section class="data">
+        <article class="datacol1">
+          <p>
+            The data visualisation page is an interesting one! On this page you
+            will find the data visualisations I created for a Nasa API. This
+            page includes two data visulisations.
+          </p>
+          <img src="Images/maxim-hopman-fiXLQXAhCfk-unsplash.jpg" alt="" />
+        </article>
+
+        <article class="datacol2">
+          <h4 id="datav">Data Visualisations</h4>
+          <p>
+            If you want to learn about the data that Nasa collected on storms
+            and asteroids in a simple and clear way you can travel to the data
+            Visualisations page. On the page you will find a line graph and a
+            bar graph. These graphs mainly convey live data or in real time data
+            which makes it very recent.
+          </p>
+          <button onclick="GoToDataVisPage()" id="datavisbtn">
+            Data Visualisations
+          </button>
+        </article>
+      </section>
+
+      <section class="visual">
+        <article class="visualcol1">
+          <p>
+            On the data art page will be the data art that I create later on.
+            For now this page is just a placeholder showing the layout that I
+            might use.
+          </p>
+          <img src="Images/fabio-oyXis2kALVg-unsplash.jpg" alt="" />
+        </article>
+
+        <article class="visualcol2">
+          <h5 id="dataart">Data Art</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
+            perspiciatis nesciunt, cupiditate magnam a quas, tenetur minima,
+            reprehenderit mollitia sunt aspernatur laudantium ipsam illum
+            exercitationem. Quidem cupiditate totam quasi facere. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <button onclick="GoToDataArtPage()" id="dataartbtn">Data Art</button>
+        </article>
+      </section>
+    </main>
+
+    <footer id="endofpage">
+      <p>Created by Kiara Mohun</p>
+      <p>
+        This website was created on the 14th of August 2023, and has since been
+        continously improved.
+      </p>
+    </footer>
+  </body>
+</html>

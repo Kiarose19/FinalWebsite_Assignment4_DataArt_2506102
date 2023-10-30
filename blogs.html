@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" { scroll-behaviour: smooth; }>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Data Visualisations" />
+    <meta name="description" content="Space" />
+    <meta name="description" content="Nasa APIs" />
+    <meta name="robots" content=".....,....." />
+    <meta name="googlebot" content="......,......" />
+    <meta name="keywords" content="Data Visualisations, Nasa, APIs, Space" />
+    <title>NASA API Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d7dd1faf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="sticky">
+        <script src="app.js"></script>
+        <label for="logo" class="logo">Space Things</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html" class="active">Blogs</a></li>
+          <li><a href="designs.html">Designs</a></li>
+          <li><a href="data-vis.html">Data Visualisations</a></li>
+          <li><a href="data-art.html">Data Art</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+    </header>
+
+    <main>
+      <h1>My Blog Posts</h1>
+      <p id="intro">
+        Welcome to the blog page! Below you will find blog post one which
+        discusses data visualisations on what it is and how it works. Alongside
+        it you will find blog post two which critically reflects on the UI/UX of
+        my website explaining what I did wrong and what I did right.
+      </p>
+
+      <section class="cont" scroll-behaviour: smooth;>
+        <article class="contcol1">
+           <!-- Trigger/Open The Modal -->
+        <button onclick="openModal()" id="modalBtn1">Blog One</button>
+        <img id="box" src="Images/Untitled.png" alt="">
+
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <button onclick="closeModal()" class="close">Close Me</button>
+    <p id="post">
+      Introduction: In the discussion below, I will be analysing what data
+      visualisation is as well as the important role it serves in a society
+      with developing technology that is constantly improving.
+    </p>
+
+    <p id="post">
+      What is data visualisation? The reading ‘Overview of Data
+      Visualisation’ by Li states several varying definitions of data
+      visualisation showcasing that it is a broad term. My understanding of
+      the reading has led me to realise that data visualisation is when data
+      is taken and reproduced into some type of visual form so that the
+      receivers of the data may truly understand what the data represents
+      thereby increasing cognition. (Li 2020: 18-19) The representation of
+      data visually simplifies it for the reader by decreasing the
+      overbearing load of information that they would have had to struggle
+      to understand if it was not done in a visual manner/form. Not only
+      does this increase readability but it also enhances understanding and
+      accessibility of the data. Data visualisation makes use of visual
+      elements like tables, charts, graphs, and maps to convey data in a way
+      that makes the information clear and effective in what it represents
+      so that the reader may gain insight and identify patterns within the
+      data. Data visualisation is highly significant in a number of fields
+      like science, academia, business and many more showing its popularity
+      in differing industries. (Li 2020: 18-19) What are the two types of
+      data visualisation? Data visualisation branches into two types or
+      fields namely information visualisation and scientific visualisation.
+      These may be two types of data visualisation, but they still convert
+      ‘’data into a visual form’’ so that the information being presented
+      becomes understandable increasing the knowledge and insight gained
+      from engaging with them. (Li 2020: 19) Information visualisation
+      represents abstract data or knowledge in a visual form so that users
+      gain a deeper understanding of it as well as can determine common
+      patterns within the data thereby assisting them in making informed
+      decisions using the data. Information data can be represented in
+      several ways like tree maps, scatter plots, and tree diagrams. In
+      information visualisation the content of the data should always be
+      considered before deciding how to best represent it visually. This is
+      so that the data becomes more effective and clearer for users.
+      Scientific visualisation represents scientific data which usually
+      centres around physicality like the human body. This type of
+      visualisation is very important in validating scientific hypotheses as
+      well as assisting people in communicating their ideas/findings more
+      effectively. “Simulations, waveforms, or volume” are the ways in which
+      scientific visualisation can be represented and these are usually done
+      using 3D modelling. The reason for discussing the two fields of data
+      visualisation was to show that it is a very flexible and broad term as
+      it is used in two ways to represent data of two entirely different
+      topics showing its capabilities in a range of fields. (Li 2020: 19-22)
+      The importance of data visualisation and choosing the right form: From
+      the above discussion it can be noted that data visualisation plays an
+      important role in many fields in representing data so that users can
+      easily grasp the concepts, patterns, and information that the data is
+      addressing and providing. Data being visually appealing referring to
+      how concise, and readable it is, heightens the retrieval of
+      information as well as the impact it has on its users. This means that
+      a larger group of users can understand what they are engaging with.
+      Data can most definitely be represented as it is but that would
+      increase difficulty, and indecisiveness of what the data is
+      representing as well as creating an overbearing amount of information
+      that the user will have to rummage through to understand what is
+      happening. This can repel users and create more confusion than
+      insight. Data visualisation is all about making information
+      accessible, readable, and concise so that user’s cognition and
+      understanding is enhanced. It is just as important to know what forms
+      of data visualisation can be used for certain types of data as this
+      also impacts how the data is received and read. Some of the forms of
+      data visualisation include trees, maps, scatter plots, and charts.
+      Each one more suitable for a specific kind of data. For example, trees
+      are used to represent a hierarchical structure in data with its
+      branches usually representing relationships that exist within the
+      data. Alternatively, charts are useful in representing quantitative
+      data like size and numbers. (Li 2020: 19-29)
+    </p>
+
+    <p id="post">
+      Conclusion: Throughout the discussion, data visualisation has become a
+      common concept as well as a significant one. The role it plays in
+      creating data that is more accessible, visually stimulating, and
+      easier to understand explains why it is so popular in several fields
+      like business, science, journalism and more. Data visualisation
+      communicates information drastically better between not only scholars
+      but the public as well, ensuring that the people who need to know
+      about the information and the people who want to know about the
+      information are both equally aware of what the data is representing. A
+      bonus aspect of data visualisation is that it allows for information
+      to be visually pleasing to the human eye. This aspect assists people
+      in grasping the concepts being displayed by the data while making it
+      effortless to remember as people are drawn to what is visually
+      pleasing. It can be compared to a person who retains information more
+      successfully when studying through the use of visual stimuli like
+      colour or little annotations because in both cases the visual aspect
+      embeds the information while simplifying it when it is being
+      processed.
+    </p>
+        </article>
+
+        <article class="contcol2">
+          <button onclick="openModal2()" id="modalBtn2">Blog Two</button>
+          <img id="box2" src="Images/Untitled.png" alt="">
+
+          <div id="myModal2" class="modal2">
+
+            <!-- Modal content -->
+            <div class="modal-content2">
+              <button onclick="closeModal2()" class="close">Close Me</button>
+              <p id="post2">
+                Introduction: User interface and user experience are vital components
+                when designing a website. Websites are platforms that are meant to be
+                engaged with and should effectively inform the user about the main
+                goals that the website should be serving. Therefore, it is necessary
+                to keep the users who will be interacting with the website in mind
+                when designing and building them. This will always allow a designer to
+                remain consistent to the experience they want their user to have when
+                traversing their website. In this blog post I will be critically
+                analysing my own website to decipher where I succeeded and failed in
+                the UI/UX aspects of my design.
+              </p>
+
+              <p id="post2">
+                What is UI/UX design: What is UI design? UI stands for user interface
+                design. This term is usually used interchangeably with user experience
+                although they are completely different aspects that work
+                simultaneously to create a cohesive website. UI design refers to the
+                visual layout and interactive elements of a website that a user will
+                have to engage with so that they may use the website to its full
+                potential. (Lamprecht, 2023) It focuses on the feel and interactivity
+                of a website ensuring that the product is as intuitive as possible.
+                Therefore, each decision whether visual or interactive needs to be
+                carefully considered because this will heighten the user experience.
+                Examples of user interface include the colour scheme, imagery, spacing
+                and responsive design. (Lamprecht, 2023) What is UX design? UX stands
+                for user experience. This aspect of design follows suit of UI as it is
+                a direct result/impact of how successfully the user interface was
+                created. The user experience refers to the “interaction between the
+                user and the product”, in this case a website. (Lamprecht, 2023) It
+                encompasses all reactions, emotions, and satisfaction the interaction
+                with the product/service evokes in the user. User experience design
+                ensures that all the required elements to create a good user
+                experience is present in the product/service. UX design aims to create
+                products/services that are in alignment with the user’s goals and
+                needs to create for a meaningful experience. (Lamprecht, 2023)
+                Analysis of my website using UI/UX design principles: The website that
+                I created for my first assignment was space themed because I am using
+                a NASA API for the data visualization section of my website.
+                Therefore, I thought reiterating the space theme throughout the
+                website would reinforce the content behind the data visualization and
+                users would not be confused when they reached that section of my
+                website. The homepage: For the homepage of my website, I decided to
+                implement a slideshow aspect because it would be easier and more
+                efficient to navigate for the users rather than scrolling down through
+                an overwhelming amount of content and information just to learn more
+                about my website and each page. This excess information would increase
+                cognitive load for the users causing their attention to stray because
+                there would be too much information and content to process before they
+                even venture through the other pages. Therefore, by using a slideshow
+                with different space related images and providing a brief description
+                of each page the cognitive load on the user is reduced and the
+                navigation is more efficient as it allows the user to travel to the
+                other pages that are more significant at a faster pace. The colours
+                and backgrounds used on each page are the same to create a cohesive
+                look throughout. This helps reinforce the idea that the website is one
+                and that the content is all related by creating familiarity. I
+                included a page number component so that when the user is navigating
+                the slideshow, they are aware of what slide they are on. This allows
+                the user to know where they currently are. (Singh, 2022)
+              </p>
+
+              <p id="post2">
+                The Blog Page: The blog page consists of a very simple layout. As soon
+                as the user enters the space they are presented with the blogs. This
+                simple layout allows the user to receive the information that is
+                necessary without having to go on a search for the blog they wish to
+                read. This is an example of good UI because I have reduced the amount
+                of work the user has to do to find my blogs. This means they can spend
+                more time reading and understanding what my blogs are conveying.
+                However, the font and colour of the font that I used appear to be
+                difficult to read which would make the user strain their eyes just to
+                decipher each word, therefore frustrating the user as they are
+                requiring more effort to read the words than they need to. This
+                decision could push the user to ignoring the content of the blogs
+                altogether. The colour and style of the blocks that contain my blogs
+                are the same to communicate to the user that what they are engaging
+                with are blogs and not other types of written works. This helps the
+                user avoid confusion by providing clarity that the elements on the
+                page are similar. (Singh, 2022) The Design Page: The design page
+                layout was designed with most important aspect being placed first
+                which are the wireframes. This is the first aspect on the page as it
+                allows the users to understand each visual and interactive decision I
+                made for each page and why. This would equip the user with a better
+                understanding of how to navigate each page as well as what they should
+                pay attention to. When the user hovers over the wireframes they get
+                highlighted which is good UI because it provides feedback to the user
+                that they should click the image. If this was not highlighted the user
+                may not have known, they could do so hindering their ability to view
+                the wireframes at an enlarged ratio. The spacing between the elements
+                on the page is good UI because it allows the user to differentiate
+                between each element as well as know that each element represents a
+                different part of the page. Therefore, the user does not have to use a
+                lot of energy in determining what elements go together and if they are
+                separate or a whole. This allows the user to effectively navigate
+                through the design page knowing what they are consuming at each stage.
+                (Singh, 2022)
+              </p>
+
+              <p id="post2">
+                Conclusion: From the above discussion, I still need to improve my UI
+                design elements to ensure for a better, meaningful user experience for
+                the users. The elements are sufficient, but they can be improved upon
+                so that the user experience is seamless and does not increase
+                cognitive load but rather decreases it.
+              </p>
+        </article>
+      </section>
+      <article class="blogposts">
+       
+
+
+        <blockquote>
+          "Across the sea of space, the stars are other suns."
+        </blockquote>
+
+      <h2>My Blog Post Three</h2>
+        <p id="post3">
+          Introduction: Interaction is a seemingly significant component of data
+          visualisation as it adds another layer to it by allowing the
+          user/person to receive some sort of feedback to highlight that their
+          input was received or acknowledged by the system. Dimara and Perin’s
+          reading ‘What is Interaction for Data Visualisation?’ draws attention
+          to the vital role that the broad term interaction is plays in
+          visualisation, specifically data visualisation. The reading showcases
+          how complex and usually ill-defined the concept of interaction is as
+          well as how it differs in various contexts like HCI compared to data
+          visualisation. Data visualisation is when data is taken and reproduced
+          into some type of visual form so that the receivers of the data may
+          truly understand what the data represents thereby increasing
+          cognition. (Li 2020: 18-19) Interaction in the realm of visualisation
+          as defined by Dimara and Perin is the connection between user/person
+          and the data interface that results in an action by the user which is
+          registered by the system thereby returning a reaction allowing the
+          user to see and grasp that their action was met with some sort of
+          feedback from the visualisation system. (Dimara & Perin 2019)
+        </p>
+
+        <p id="post3">
+          Interaction for HCI and Data Visualisation: In the reading, Dimara and
+          Perin compare how interaction is different in the realm of HCI
+          compared to the realm of data visualization. This contrast emphasizes
+          how the term interaction is quite broad in what it describes as well
+          as how it is used and defined in different contexts. However, it helps
+          develop an understanding of interaction specifically related to
+          visualization. Interaction for Human-computer Interaction (HCI) As
+          mentioned above the reading highlights the many differences between
+          the concept of interaction between HCI and data visualization. One of
+          the more significant differences is that interaction in HCI requires
+          the user and the computer alongside the dialogue that ensues between
+          the two to result in an action-reaction state. The interaction for HCI
+          does not require the data component that interaction for visualization
+          requires. The reading mentions several components that interaction for
+          HCI requires. For example, two important components required for HCI
+          interaction that are not considered in interaction for visualization
+          is embodiment and experience (user). (Dimara & Perin 2019) Embodiment
+          allows the user to feel and believe that the technology is a part of
+          them and not a separate entity. This creates a seamlessness within how
+          the user interacts with the technology and registers the interaction.
+          “Embodiment hones in on the experience the user has and how that is
+          applied to the interaction and actions being coupled with contexts.”
+          This description from the reading explains a significant difference
+          between interaction for HCI and interaction for visualization because
+          it shows how in the context of HCI the user’s experience is quite
+          important in determining how their interaction and actions with the
+          technology is processed and understood. (Dimara & Perin 2019)
+          Experience is like embodiment in that it focuses on the psychological
+          needs of the user and plays on those needs to create an impactful user
+          experience thereby placing heavy importance on human experience to
+          draw out those emotions and understanding as well as using aesthetics
+          as an advantage to create a deeper impact on the user. Experience in
+          interaction for HCI concentrates more on creating pleasure within the
+          user and assisting them in deriving meaning from their interaction
+          rather than efficiency and ability. (Dimara & Perin 2019) For example,
+          if a user clicks a button and a little animation ensues to give
+          feedback to them, the animation is mainly there for the user to
+          enjoy/get excited about which creates that feeling of pleasure because
+          it feels like they are being rewarded for performing the action.
+          (Elmqvist et al. 2011) Despite the visible differences present between
+          interaction for HCI and interaction for visualization, understanding
+          interaction for HCI paves the way to understand how interaction for
+          visualization works specifically in that context. Interaction for data
+          visualization/visualization To define interaction in visualization,
+          the reading highlights the key differences between visualization and
+          HCI focusing on entities, flexibility, intent, and focus. These key
+          differences assist in formulating the definition of interaction in
+          visualization that was discussed in the introduction of this blog
+          post. Entities in HCI only involve the engagement of human and
+          computer while in visualization, a data entity is needed which leads
+          to the engagement of human, computer and data with the computer being
+          the platform on which the user can interact with the data. (Dimara &
+          Perin 2019) For example, the user pressing a button to go to a new
+          page on a website could be considered engagement between user and
+          computer while a user mousing over a bubble in a bubble graph to show
+          the name and population of a country would be the user interacting
+          with the data through the computer. (Elmqvist et al. 2011) Performance
+          focus in HCI strives to have tools that are easy and understandable to
+          use creating a seamless and effortless user experience. In contrast,
+          visualization overlooks user experience and therefore mainly aims at
+          trying to help the user in understanding and grasping the data that
+          they are interacting with. Therefore, requiring more effort and time
+          from the user to carefully go through the data to develop a greater
+          understanding of it. (Dimara & Perin 2019) However, for the user to
+          understand that their engagement with the visualization is being
+          registered immediate visual feedback should be given to the user so
+          that they can know that an interaction is taking place because of
+          their action. For example, all aspects that are clickable and display
+          extra information should be highlighted when the mouse moves over it
+          so that the user knows that they can click it and learn more about the
+          data. (Elmqvist et al. 2011) Although interaction for HCI assists in
+          understanding interaction for visualization there are some aspects
+          that cannot be explained or understood through the lens of interaction
+          for HCI. This is because HCI and visualization still have differences
+          that separate how interaction relates to them mainly because
+          visualization contains the extra element of data. (Dimara & Perin
+          2019)
+        </p>
+
+        <p id="post3">
+          Conclusion: Interaction as mentioned above is a thoroughly broad term
+          and serves a different purpose in relation to the context it is being
+          used in. The comparison and contrast of interaction for HCI and
+          interaction for data visualization shows how unique and similar the
+          term of interaction can be. Therefore, understanding how interaction
+          works within the context of HCI helped form understanding of how it
+          works in the context of visualization as well as assisted in creating
+          a working definition of interaction in the realm of visualization.
+        </p>
+
+        <p id="post3">
+          References: Dimara, E. and Perin, C., 2019. What is interaction for
+          data visualization? IEEE transactions on visualization and computer
+          graphics, 26(1), pp.119-129. Elmqvist, N., Moere, A.V., Jetter, H.C.,
+          Cernea, D., Reiterer, H. and Jankun-Kelly, T.J., 2011. Fluid
+          interaction for information visualization. Information Visualization,
+          10(4), pp.327-340. Kirby, R.M. and Meyer, M., 2013. Visualization
+          collaborations: What works and why. IEEE computer graphics and
+          applications, 33(6), pp.82-88.
+        </p>
+
+        <h3>My Blog Post Four</h3>
+        <p id="post3">Introduction:
+          Definition of Data-driven Artwork:
+          Data-driven artwork is a broad topic as it has become a common practice to create art from data. Data-driven artwork can be defined as art that is created using data/datasets as its primary source. This art can be interactive, visual, and auditory as well as all three simultaneously. Many fields make use of data art to provide visually stimulating and appealing works to convey to their audience/viewers. This allows an alternative to data visualization and can assist people looking at/trying to understand the data in greater detail. Data art is not only appeasing to the human senses, but it also offers a new and fresh perspective on the data being explored which provides greater depth and understanding of it. (Benzi 2020) Data art can be found in a vast number of places like the weather app. An app that many people including I use regularly. The weather app has a great example of how data art can be used to explain data in a creative and aesthetically pleasing way. The image below shows how high or low the temperature is across the week. This is done by using colours. The deeper orange red indicates quite high temperatures while the pale yellow to green indicates low temperatures. This also displays an increase/decrease in temperature. By using this visual, it provides more detail in an efficient way as it displays when the change and drop/increase in temperature starts which is not necessarily only represented by numbers.
+          </p>
+
+          <p id="post3">
+            Critical reflection on my data-driven artwork:
+            A reflection on the representation and communication strategies used in my data-driven artwork:
+            It was a difficult decision for me to decide what data art I wanted to include in my website because I assumed it had to be related/like data visualization. However, after my research and looking into examples of data art I realized that data art was about finding creative, emotional, and though-provoking ways to represent data that would have an impact on the audience/viewers receiving that data. (Viegas & Wattenberg 2007) Therefore, I decided to make an animation for my data art. This data art would have asteroids rotating at various speeds depending on their individual speeds and would be represented visually based on their different sizes, textures, and shapes. The animation part would be the rotation of the asteroids. I wanted to achieve a set of asteroids that rotated simultaneously when the user entered the webpage of the data art section. I aimed for data-driven artwork that showcased information on asteroids that the ‘Asteroids NeoWs’ API provided. Adding the element of rotating asteroids would pique the users’ attention while providing an exciting way of displaying the asteroids data like its rotation speed, size, and distance from the earth. Including the visual aspect adds another layer to the data being represented as it provides the users with an idea of what the asteroids might look like and how fast they travel/rotate as well as how close they get to the earth. This thereby provides the users with a visual way to observe the data improving their understanding of what the data is portraying. This also increases the accessibility of the data since people of all ages would be more likely to understand what the NeoWs API is conveying as the art makes use of images and animations to differentiate between each asteroid like how some asteroids are bigger and faster than others. 
+
+          </p>
+
+          <p id="post3">
+            The data-driven artwork engages with the dataset explicitly in that even though 
+            the data is not being represented in a graph, the users will still be able to 
+            interpret and interact with the data. Initially I was going to just have the 
+            images on the page, but after looking at data art examples like the weather app 
+            one above I realised that adding text underneath the images stating the size, 
+            distance and speed of the asteroids would be a good decision to solidify the data 
+            to the users as well as aiding in their understanding of what they are looking 
+            at/interacting with. If there were just images, it might be confusing and meaningless
+             to the users as they would not understand what is being represented. Adding a tooltip to the asteroids may seem like a stronger idea which I will try to implement. This factor would allow the users to interact with the asteroids making the data art a more fun and engaging experience rather than just staring at images and words. The tooltip would bring up the size, distance to the earth, and speed of the asteroid instead of having it placed underneath the asteroids. This data-driven artwork does enhance the meaning of the data because there is a direct correlation between what the data represents and what the art is representing. The main subject matter of the art is asteroids being different shapes, sizes, distances, and speeds to highlight what the dataset conveys. Giving the users a visual of what the asteroids look like, how fast they rotate, and how far away/close to the earth they are brings intrigue and narrative to the data. 
+          </p>
+
+          <p id="post3">
+            The image above was the type of data art that I found when I was conducting 
+            my research. The reason I have added this image is because it was the main 
+            inspiration behind my own data-driven artwork. This image made me think about 
+            space which is the theme for the website and from this image I started 
+            thinking about ways I could turn the ‘Asteroids NeoWs’ API into data art 
+            that had a similar feeling/look. Although my art is very different to this 
+            image, it still assisted me in reaching the final idea/iteration of my data art for the sole purpose that it reminded me of space and how the asteroids and planets “float” in space which is what I tried to achieve through my art. My data art does not have so many colours since it does not require such vibrant colours and may not be as visually stimulating as the image above but as Viegas and Wattenberg mention in their reading, data art does not necessarily have to be attractive or visually pleasing to be considered art, rather it is the intent behind the creation that determines whether it is art or not. (Viegas & Wattenberg 2007) It still adds a new meaning to the art because it is not being represented in a graph or chart but rather through images and animations (which was made using d3.js).
+          </p>
+
+          <p id="post3">
+            Conclusion:
+Data-driven artwork as mentioned above is broad spectrum concept that is used in many fields and aspects of everyday life. However, it is a very intriguing and creative way to represent data whether the reason for doing so is to reach a wider audience or to deepen one’s own understanding of the data. Data-driven art serves a multitude of purposes and the most important one being that it can assist in providing fresh, new perspectives of the data as well as adding meaningful narratives and connections to the datasets. 
+
+          </p>
+
+          <p id="post3">
+            References:
+Viegas, F. & Wattenberg, M. 2007. Artistic Data Visualization: Beyond Visual Analytics: 1-10.
+Benzi, K. 2020. Kirell Benzi. Blogs. Online. https://www.kirellbenzi.com/blog/data-art-definition#:~:text=Data%20Art%20or%20data%2Ddriven,come%20from%20the%20artist'
+s%20imagination. 26 October 2023. 
+Nuccio, M. and Bertacchini, E., 2022. Data-driven arts and cultural organizations: opportunity or chimera? European Planning Studies, 30(9), pp.1638-1655.
+West, R.G., Monroe, L., Morie, J.F. and Aguilera, J., 2013, March. Art, science, and immersion: data-driven experiences. In The Engineering Reality of Virtual Reality 2013 (Vol. 8649, pp. 155-162). SPIE.
+
+          </p>
+      </article>
+    </main>
+  </body>
+
+  <footer id="endofpage">
+    <p>Created by Kiara Mohun</p>
+    <p>
+      This website was created on the 14th of August 2023, and has since been
+      continously improved.
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Data Visualisations" />
+    <meta name="description" content="Space" />
+    <meta name="description" content="Nasa APIs" />
+    <meta name="robots" content=".....,....." />
+    <meta name="googlebot" content="......,......" />
+    <meta name="keywords" content="Data Visualisations, Nasa, APIs, Space" />
+    <title>NASA API Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8d7dd1faf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="sticky">
+        <script src="app.js"></script>
+        <label for="logo" class="logo">Space Things</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="designs.html">Designs</a></li>
+          <li>
+            <a href="data-vis.html" class="active">Data Visualisations</a>
+          </li>
+          <li><a href="data-art.html">Data Art</a></li>
+        </ul>
+        <label id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
+      </nav>
+    </header>
+
+    <h1>Data Visualisations</h1>
+    <h2 id="line">A Line Graph Depicting The Position of a Storm</h2>
+    <section id="root"></section>
+    <script src="app1.js"></script>
+
+    <section id="root2">
+      <h3 id="bar">A Bar Graph Depicting Number of Asteroids</h3>
+      <div id="bargraph"></div>
+    </section>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="app2.js"></script>
+
+    <section id=>
+      <h4 id="graph">A Bubble Graph Showing Magnitude of Fireballs</h4>
+      <div id="bubblegraph">
+        <img id="bubbles" src="Images/Screenshot 2023-10-10 200232.png" alt="">
+        <div class="tooltip1">
+          15kT(energy).
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="app3.js"></script>
+
+  <footer id="endofpage">
+    <p>Created by Kiara Mohun</p>
+    <p>
+      This website was created on the 14th of August 2023, and has since been
+      continously improved.
+    </p>
+  </footer>
+</html>
